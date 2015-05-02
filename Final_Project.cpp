@@ -111,6 +111,10 @@ int main(int argc, char *argv[])
 			getline(cin,new_string_guitar5);
 			cout << "Enter new string guitar 6" << endl;
 			getline(cin,new_string_guitar6);
+			//I WOULD ADD AN IF STATEMENT TO CHECK IF THE CHORD YOU ARE TRYING TO ADD ALREADY EXISTS.
+			//IF IT DOES NOT EXIST CALL THE ADD_CHORD FUNCTION, OTHERWISE SAY THAT THE CHORD ALREADY EXISTS.
+			//ALSO, IF I TRY TO ADD D MINOR, FOR EXAMPLE, WHICH DOES NOT EXIST BY DEFAULT, I GET 
+			//A SEGMENTATION FAULT. I DID NOT FIGURE OUT WHY THOUGH.
 			the_guitar->add_chord(chord_to_add, new_string_guitar1, new_string_guitar2,new_string_guitar3,new_string_guitar4,new_string_guitar5, new_string_guitar6);
 			break;
 		}
